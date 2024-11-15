@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Care : Medical Info App</title>
-    <link rel="stylesheet" href="css/styles.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<!--- <script src="chart1.js"></script> --->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="chart1.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
 
 
     <style>
@@ -19,8 +22,9 @@
             margin: 30px;
             background-color: aquamarine;
         }
-        </style>
+    </style>
 </head>
+
 <body>
 
     <header class="mb-4">
@@ -30,7 +34,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                
+
                 <div class="collapse navbar-collapse" id="mynavbar">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
@@ -65,11 +69,13 @@
                         </li>
                     </ul>
                     <div class="d-flex align-items-center">
-                        <img src="img/senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc.png" alt="Profile Image" class="rounded-circle me-3" style="width: 44px; height: 44px;">
+                        <img src="img/senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc.png"
+                            alt="Profile Image" class="rounded-circle me-3" style="width: 44px; height: 44px;">
                         <div class="text-end">
                             <p class="mb-0 fw-bold">Doctor Patient</p>
                             <p class="mb-0 text-muted">General Developer</p>
                         </div>
+                        <div class="vL mx-2">&nbsp; &nbsp;</div>
                         <img src="img/settings_FILL0_wght300_GRAD0_opsz24.svg" alt="Settings" class="ms-3">
                         <img src="img/more_vert_FILL0_wght300_GRAD0_opsz24.svg" alt="More" class="ms-2">
                     </div>
@@ -83,9 +89,9 @@
 
 
 
-    <div class="container-fluid" >
-        
-        <div class="row gx-4" >
+    <div class="container-fluid">
+
+        <div class="row gx-4">
             <!---Patients List  start-->
             <div class="col-md-3 mb-4 card1">
                 <div class="d-flex justify-content-between align-items-center">
@@ -96,7 +102,7 @@
                     <div id="menuItemsContainer"></div>
                 </div>
 
-                
+
             </div>
             <!---Patients List  end -->
 
@@ -152,9 +158,9 @@
 
 
 
- <!---Patient Det Start -->
-            
-            <div class="col-md-3 mb-4" >
+            <!---Patient Det Start -->
+
+            <div class="col-md-3 mb-4">
 
                 <div class="card1 mb-4" id="patient-info">
                     <div class="text-center my-3">
@@ -183,29 +189,31 @@
                             <p class="mb-0"> Contact Info</p>
                             <p class="fw-bold" id="contact"></p>
                         </div>
-                    </div>     
+                    </div>
                     <div class="d-flex align-items-center mb-2">
                         <img src="img/PhoneIcon.svg" alt="Female Icon" class="me-2">
                         <div>
                             <p class="mb-0">Emergency Contact</p>
                             <p class="fw-bold" id="emergency"></p>
                         </div>
-                    </div>  
+                    </div>
                     <div class="d-flex align-items-center mb-2">
                         <img src="img/InsuranceIcon.svg" alt="Female Icon" class="me-2">
                         <div>
                             <p class="mb-0">Insurance Provider</p>
                             <p class="fw-bold" id="insurance"></p>
                         </div>
-                    </div>  
+                    </div>
 
                     <div class="text-center mb-2">
-                        <div class="menu-item" >
-                            <a href="" class="btn btn-primary" style="background-color: aquamarine ; color: black; border-radius: 20px; height: auto; font-weight: 700;"> Show All information</a>
+                        <div class="menu-item" id="showAll">
+                            <a href="" class="btn btn-primary"
+                                style="background-color: aquamarine ; color: black; border-radius: 20px; height: auto; font-weight: 700;">
+                                Show All information</a>
                         </div>
-                    </div> 
-                       
-                        
+                    </div>
+
+
 
                 </div>
 
@@ -214,8 +222,8 @@
                     <table class="table table-striped">
                         <thead>
                             <tr style="background-color: gray; color: aquamarine;">
-                                <th >Name</th>
-                                <th >Status</th>
+                                <th>Name</th>
+                                <th>Status</th>
                             </tr>
                         </thead>
                         <tbody id="lab" style="overflow-y: auto;"></tbody>
@@ -223,7 +231,7 @@
                 </div>
 
             </div>
- <!---Patient Det end -->
+            <!---Patient Det end -->
 
         </div>
 
@@ -238,9 +246,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 
     <script src="js/script.js"></script>
-  <!--  <script src="list.js"></script>
-    <script src="chart.js"></script>
-    <script src="cards.js"></script>
-    <script src="patients.js"></script> -->
+    <!-- <script src="list.js"></script> -->
+    <!-- <script src="chart.js"></script>
+    <script src="cards.js"></script> -->
+    <!-- <script src="patients.js"></script> -->
 </body>
+
 </html>
