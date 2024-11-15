@@ -54,6 +54,7 @@ fetch("https://fedskillstest.coalitiontechnologies.workers.dev", requestOptions)
 
       
       table.appendChild(row);
+      
     });
 
   
