@@ -94,6 +94,14 @@ fetch("https://fedskillstest.coalitiontechnologies.workers.dev", requestOptions)
     const showAll = document.getElementById('showAll');
     //console.log(showAll);
     showAll.addEventListener('click', function () {
+
+      array.forEach((element, index) => {
+      element.addEventListener('click', function () { 
+        selectPatient = dummyDataIndex(index);
+        patientData = selectPatient;
+        console.log(selectPatient);
+      })
+      })
       diagnosisTable();
       diagnosisHistory();
       diagnosisChart();
